@@ -14,27 +14,17 @@ public class Ex10 {
 		System.out.println("사번(정수)를 입력해주세요");
 		System.out.print("사번: ");
 		int num = sc.nextInt();
-		char team;
-		if(num>=0) {
-			if(num%3==0) {
-				team = 'A';
+		if(num>=0){
+			if(num%3==0){
+				System.out.println("A팀입니다.");
 			}else if(num%3==1) {
-				team = 'B';
+				System.out.println("B팀입니다.");
 			}else {
-				team = 'C';
+				System.out.println("C팀입니다.");
 			}
 		}else {
 			System.out.println("잘못입력하셨습니다.");
 		}
-		
-		System.out.println((char) team + "팀입니다.");
-		
-		
-		// 의문점 : String이 +를 못먹는 이유는?
 		sc.close();
-		
-		
-		
 	}
-
 }
