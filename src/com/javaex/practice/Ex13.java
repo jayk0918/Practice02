@@ -21,7 +21,6 @@ public class Ex13 {
 			result = (7*num) + 2;
 		}
 		
-		
 		System.out.println("계산결과는 " + result + " 입니다.");
 		
 		sc.close();

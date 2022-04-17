@@ -18,14 +18,35 @@ public class Ex12 {
 		double num1 = sc.nextDouble();
 		System.out.print("숫자2: ");
 		double num2 = sc.nextDouble();
+		double result;
 		
-		switch(sign) {
-			
-		case "+":
-			(double)num1 + num2;
-		}
-			
-		
+		if(sign == "/" && num2== 0) {
+			System.out.println("계산할 수 없습니다.");
+		}else {
+			switch(sign) {
+				case "+":
+					result = num1 + num2;
+					System.out.println("결과는: " + result);
+					break;
+					
+				case "-":	
+					result = num1 - num2;
+					System.out.println("결과는: " + result);
+					break;
+					
+				case "*":
+					result = num1 * num2;
+					System.out.println("결과는: " + result);
+					break;
+					
+				case "/":
+					result = num1 / num2;
+					System.out.println("결과는: " + result);
+					break;
+					
+			}
+		}	
+				
 		
 		sc.close();
 		
