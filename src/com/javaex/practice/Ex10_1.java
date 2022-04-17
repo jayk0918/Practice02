@@ -2,7 +2,7 @@ package com.javaex.practice;
 
 import java.util.Scanner;
 
-public class Ex10 {
+public class Ex10_1 {
 
 	public static void main(String[] args) {
 		// 사번(양의 정수)를 입력하면 / 팀을 확인할 수 있게

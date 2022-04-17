@@ -2,7 +2,7 @@ package com.javaex.practice;
 
 import java.util.Scanner;
 
-public class Ex09 {
+public class Ex09_1 {
 
 	public static void main(String[] args) {
 		// 두개의 정수 입력을 받고 / 작은수가 큰수의 약수인지를 확인
