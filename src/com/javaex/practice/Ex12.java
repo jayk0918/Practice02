@@ -20,32 +20,36 @@ public class Ex12 {
 		double num2 = sc.nextDouble();
 		double result;
 		
-		if(sign == "/" && num2== 0) {
-			System.out.println("계산할 수 없습니다.");
-		}else {
-			switch(sign) {
-				case "+":
-					result = num1 + num2;
-					System.out.println("결과는: " + result);
-					break;
-					
-				case "-":	
-					result = num1 - num2;
-					System.out.println("결과는: " + result);
-					break;
-					
-				case "*":
-					result = num1 * num2;
-					System.out.println("결과는: " + result);
-					break;
-					
-				case "/":
+		switch(sign) {
+			case "+":
+				result = num1 + num2;
+				System.out.println("결과는: " + result);
+				break;
+				
+			case "-":	
+				result = num1 - num2;
+				System.out.println("결과는: " + result);
+				break;
+				
+			case "*":
+				result = num1 * num2;
+				System.out.println("결과는: " + result);
+				break;
+				
+			case "/":
+				if(num2==0) {
+					System.out.println("계산할 수 없습니다.");
+				}else {
 					result = num1 / num2;
 					System.out.println("결과는: " + result);
-					break;
-					
-			}
-		}	
+				}
+				break;
+			
+			default:
+				System.out.println("계산할 수 없는 기호입니다.");
+				
+		}
+		
 				
 		
 		sc.close();
